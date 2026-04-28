@@ -37,7 +37,6 @@
 
   /* Typography */
   --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body:    'Source Serif 4', 'Georgia', serif;
   --font-label:   'DM Mono', 'Courier New', monospace;
 
   /* Radius */
@@ -78,7 +77,6 @@
   --accent-crimson-dim:  rgba(192, 64, 64, 0.1);
 
   --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body:    'Source Serif 4', 'Georgia', serif;
   --font-label:   'DM Mono', 'Courier New', monospace;
 
   --radius-sm: 7px;

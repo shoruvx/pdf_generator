@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Lato:wght@300;400;700&family=Montserrat:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@500;600;700;800&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -50,7 +50,9 @@
 
   /* Fonts */
   --font-display: 'Playfair Display', Georgia, serif;
-  --font-body:    'Lato', 'Helvetica Neue', sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+                  "Segoe UI", Roboto, Helvetica, Arial,
+                  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
   --font-label:   'Montserrat', 'Arial', sans-serif;
 }
 
