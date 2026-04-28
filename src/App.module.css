@@ -35,10 +35,13 @@
   --accent-crimson:      #b93c3c;
   --accent-crimson-dim:  rgba(185, 60, 60, 0.1);
 
-  /* Typography */
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body:    'Source Serif 4', 'Georgia', serif;
-  --font-label:   'DM Mono', 'Courier New', monospace;
+  /* Typography — Apple SF system stack */
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-label:   -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   /* Radius */
   --radius-sm: 7px;
@@ -77,9 +80,12 @@
   --accent-crimson:      #c04040;
   --accent-crimson-dim:  rgba(192, 64, 64, 0.1);
 
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body:    'Source Serif 4', 'Georgia', serif;
-  --font-label:   'DM Mono', 'Courier New', monospace;
+  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-label:   -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   --radius-sm: 7px;
   --radius-md: 12px;

@@ -51,15 +51,14 @@ export async function generatePDF(elementId, filename = "cover-page") {
       windowWidth:  794,
       windowHeight: 1123,
       onclone: (clonedDoc) => {
-        /* Ensure the cloned document also has the font import */
+        /* Use the SF system font stack so the PDF output matches the website */
         const style = clonedDoc.createElement("style");
         style.textContent = `
-          @import url('https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-          * { font-family: 'Times New Roman', 'Tinos', Times, serif !important; }
+          * { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+              "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important; }
         `;
         clonedDoc.head.appendChild(style);
-        /* Wait briefly for the font to be injected */
-        return new Promise((resolve) => setTimeout(resolve, 600));
+        return new Promise((resolve) => setTimeout(resolve, 200));
       },
     });
 
