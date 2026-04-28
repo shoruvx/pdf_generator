@@ -36,9 +36,9 @@
   --accent-crimson-dim:  rgba(185, 60, 60, 0.1);
 
   /* Typography */
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body:    'Source Serif 4', 'Georgia', serif;
-  --font-label:   'DM Mono', 'Courier New', monospace;
+  --font-display: var(--font-sf);
+  --font-body:    var(--font-sf);
+  --font-label:   var(--font-sf);
 
   /* Radius */
   --radius-sm: 7px;
@@ -77,9 +77,9 @@
   --accent-crimson:      #c04040;
   --accent-crimson-dim:  rgba(192, 64, 64, 0.1);
 
-  --font-display: 'Playfair Display', 'Georgia', serif;
-  --font-body:    'Source Serif 4', 'Georgia', serif;
-  --font-label:   'DM Mono', 'Courier New', monospace;
+  --font-display: var(--font-sf);
+  --font-body:    var(--font-sf);
+  --font-label:   var(--font-sf);
 
   --radius-sm: 7px;
   --radius-md: 12px;
