@@ -46,13 +46,17 @@
   --radius-md:   10px;
   --radius-lg:   16px;
 
-  /* Fonts — SF system font stack (SF Pro used automatically on macOS/iOS) */
-  --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-label:   -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* Fonts — Apple SF system stack (SF is used automatically on macOS/iOS via -apple-system).
+     SF Pro is not redistributable as a webfont, so we rely on the OS to provide it and
+     fall back to the closest system UI equivalents on other platforms. */
+  --font-sans:    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial,
+                  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas,
+                  "Liberation Mono", "Courier New", monospace;
+  --font-display: var(--font-sans);
+  --font-body:    var(--font-sans);
+  --font-label:   var(--font-sans);
 }
 
 /* ── Light Theme ── */
@@ -91,7 +95,6 @@ html, body, #root {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Ensure form controls inherit the system font */
 button, input, textarea, select {
   font-family: inherit;
 }

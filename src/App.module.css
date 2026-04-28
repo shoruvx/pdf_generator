@@ -35,13 +35,13 @@
   --accent-crimson:      #b93c3c;
   --accent-crimson-dim:  rgba(185, 60, 60, 0.1);
 
-  /* Typography — SF system font stack (SF Pro used automatically on macOS/iOS) */
+  /* Typography — Apple SF system stack */
   --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-label:   -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-label:   -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   /* Radius */
   --radius-sm: 7px;
@@ -81,11 +81,11 @@
   --accent-crimson-dim:  rgba(192, 64, 64, 0.1);
 
   --font-display: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
-    system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --font-label:   -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui,
-    "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-body:    -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-label:   -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text",
+                  "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 
   --radius-sm: 7px;
   --radius-md: 12px;
