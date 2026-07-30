@@ -1,17 +1,48 @@
-# React + Vite
+# PUST Cover Page Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A browser-based PDF cover page generator for PUST (Pabna University of Science and Technology) students. Fill in your course and student details, preview a live A4 cover, and export a pixel-perfect PDF — entirely in the browser, no server required.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React 19** — UI framework
+- **Vite** — build tool and dev server
+- **html2canvas + jsPDF** — client-side PDF generation
 
-## React Compiler
+## Local Development
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Build
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# pdf_generator
+```bash
+npm run build
+# Output: dist/
+```
+
+## Deploy to Vercel
+
+### One-click import
+
+1. Go to [vercel.com/new](https://vercel.com/new) and import the `shoruvx/pdf_generator` repository.
+2. Vercel automatically detects **Vite** as the framework. The settings below are filled in automatically — verify they match:
+
+   | Setting | Value |
+   |---|---|
+   | **Framework Preset** | Vite |
+   | **Build Command** | `npm run build` |
+   | **Output Directory** | `dist` |
+   | **Install Command** | `npm install` |
+
+3. No environment variables are required for this project.
+4. Click **Deploy**.
+
+### SPA routing
+
+The included `vercel.json` rewrites all routes to `index.html` so client-side navigation works correctly after a hard refresh or direct URL visit.
+
+### Subsequent deployments
+
+Every push to `main` will trigger an automatic deployment on Vercel once the project is imported.
